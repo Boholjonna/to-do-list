@@ -37,7 +37,7 @@ export default function SettingsScreen() {
 
   const backgroundComponent = themeSettings.background_type === 'gradient' ? (
     <LinearGradient
-      colors={colors.background}
+      colors={colors.background as any}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
       style={StyleSheet.absoluteFill}
